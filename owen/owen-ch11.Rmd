@@ -103,8 +103,15 @@ plot(foo[1:10])
 
 
 
-> d) Find π(Berri-UQAM) for the original walk. One way to do this is by
-solving the eigenvalue problem πP = π, taking care to get the left eigenvector corresponding to eigenvalue 1. Compare this probability to that
+> d) Find $\pi$(Berri-UQAM) for the original walk. One way to do this is by
+solving the eigenvalue problem $\pi P = \pi$, taking care to get the left eigenvector corresponding to eigenvalue 1. Compare this probability to that
 for the other two walks considered here. Comment also on how quickly
 the limiting probability is approached in the three walks.
 
+```{r}
+eigen(Pmat)
+```
+We see that the first eigenvector has all entries equal to each other. The R help file tells us that the eigenvectors are normalized. 
+```{r}
+sqrt(1/5)
+```
